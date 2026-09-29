@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Task_TrackerApp: App {
@@ -13,5 +14,7 @@ struct Task_TrackerApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Task.self)
     }
 }
+ 
